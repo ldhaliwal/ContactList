@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
 /**
  * A class that stores subclasses of Person as a contact list.
  * The user is presented with a menu of options and may add, sort,
@@ -13,14 +10,18 @@ import java.util.Scanner;
  * Year: 2022-2023
  */
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class ContactList
 {
-    // TODO: Create your array contacts
+    //ArrayList of contacts
     ArrayList<Person> contacts;
 
     //initialize scanner
     Scanner s = new Scanner(System.in);
 
+    //Constructor
     public ContactList(){
         contacts = new ArrayList<>();
     }
@@ -64,14 +65,14 @@ public class ContactList
         System.out.println("Phone Number: ");
         String phoneNumber = s.nextLine();
 
-        //if the new contact is a student, get the grade and add the student to the list
+        //if the new contact is a student, get the grade and add the new student to the list
         if(contactType == 1){
             System.out.println("Grade: ");
             int grade = s.nextInt();
 
             contacts.add(new Student(firstName, lastName, phoneNumber, grade));
         }
-        //if the new contact is a teacher, get their subject and room number and add the student to the list
+        //if the new contact is a teacher, get their subject and room number and add the new teacher to the list
         else{
             System.out.println("Subject: ");
             String subject = s.nextLine();

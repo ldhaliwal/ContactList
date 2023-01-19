@@ -3,8 +3,8 @@
  *
  * Created for Menlo School CS2
  *
- * @author: Liliana Dhaliwal
- * @version: 2022-2023
+ * Code by: Liliana Dhaliwal
+ * Year: 2022-2023
  */
 public class Teacher extends Person{
     private String subject;
