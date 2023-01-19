@@ -16,6 +16,7 @@ public class Teacher extends Person{
         this.roomNumber = roomNumber;
     }
 
+    //getter methods for instance variables
     public String getSubject() {
         return subject;
     }
@@ -24,6 +25,7 @@ public class Teacher extends Person{
         return roomNumber;
     }
 
+    //toString method that builds on the Person toString method
     @Override
     public String toString() {
         return super.toString() + " Teaches " + subject + " in room " + roomNumber;

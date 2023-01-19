@@ -3,8 +3,9 @@
  *
  * Created for Menlo School CS2
  *
- * @author: Ms. Namasivayam & Mr. Blick
- * @version: 2022-2023
+ * Base code by: Ms. Namasivayam & Mr. Blick
+ * Final code by: Liliana Dhaliwal
+ * Year: 2022-2023
  */
 
 public class Student extends Person {
@@ -16,10 +17,12 @@ public class Student extends Person {
         this.grade = grade;
     }
 
+    //getter method for instance variable
     public int getGrade() {
         return grade;
     }
 
+    //toString method that builds on the Person toString method
     @Override
     public String toString() {
         return super.toString() + " Grade: " + grade;

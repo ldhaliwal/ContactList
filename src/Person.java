@@ -3,8 +3,9 @@
  *
  * Created for Menlo School CS2
  *
- * @author: Ms. Namasivayam & Mr. Blick
- * @version: 2022-2023
+ * Base code by: Ms. Namasivayam & Mr. Blick
+ * Final code by: Liliana Dhaliwal
+ * Year: 2022-2023
  */
 
 public class Person {
@@ -20,6 +21,7 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    //getter methods for all instance variables
     public String getFirstName() {
         return firstName;
     }
